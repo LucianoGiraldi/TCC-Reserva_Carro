@@ -1,6 +1,6 @@
 // Função para formatar CPF
 function formatarCPF(cpfInput) {
-    var cpf = cpfInput.value;
+    let cpf = cpfInput.value;
   
     // Remove todos os caracteres que não sejam dígitos
     cpf = cpf.replace(/\D/g, '');
@@ -14,7 +14,7 @@ function formatarCPF(cpfInput) {
   
   // Função para formatar telefone
   function formatarTelefone(telefoneInput) {
-    var telefone = telefoneInput.value;
+    let telefone = telefoneInput.value;
   
     // Remove todos os caracteres que não sejam dígitos
     telefone = telefone.replace(/\D/g, '');
@@ -25,19 +25,4 @@ function formatarCPF(cpfInput) {
     // Atualiza o valor no campo
     telefoneInput.value = telefone;
   }
-
-  // Função para formatar CEP
-function formatarCEP(cepInput) {
-  var cep = cepInput.value;
-
-  // Remove todos os caracteres que não sejam dígitos
-  cep = cep.replace(/\D/g, '');
-
-  // Adiciona a máscara
-  cep = cep.replace(/(\d{5})(\d{3})/, '$1-$2');
-
-  // Atualiza o valor no campo
-  cepInput.value = cep;
-}
-
   
